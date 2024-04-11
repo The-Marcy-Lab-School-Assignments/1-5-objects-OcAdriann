@@ -6,14 +6,17 @@ const coolGreeting = (person) => {
   }
 };
 
-const haveBirthday = () => {
+const haveBirthday = (person) => {
+  person.age = person.age + 1
 };
 
 const becomeSecretAgent = () => {
 };
 
-const carMaker = () => {
+const carMaker = (name, maker, year) => {
+
 };
+
 
 const weAreNotFriends = () => {
 };
