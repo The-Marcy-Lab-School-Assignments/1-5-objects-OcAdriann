@@ -16,17 +16,25 @@ const becomeSecretAgent = (person, spyHandle) => {
 };
 
 const carMaker = (name, maker, year) => {
-
+  let car = { name: name, maker: maker, year: year, needsOilChange: false }
+  return car
 };
 
-
-const weAreNotFriends = () => {
+const weAreNotFriends = (person) => {
+  return person.friends.pop()
 };
 
-const listHobbies = () => {
+const listHobbies = (person) => {
+  for (let i of person.hobbies) {
+    console.log(`${person.name} likes ${i}.`)
+  }
 };
 
-const getNextOpponent = () => {
+const getNextOpponent = (team) => {
+  if (team.matches[0] === undefined) {
+    return null
+  }
+  return team.matches[0].teamName;
 };
 
 const listAllKeys = () => {
