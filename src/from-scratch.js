@@ -16,8 +16,10 @@ const becomeSecretAgent = (person, spyHandle) => {
 };
 
 const carMaker = (name, maker, year) => {
-
+  let car = { name: name, maker: maker, year: year, needsOilChange: false }
+  return car
 };
+console.log(carMaker)
 
 
 const weAreNotFriends = () => {
